@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradients_background"
+    tools:context=".home_act">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="385dp"
+        android:layout_height="354dp"
+        android:layout_marginTop="28dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Bienvenido a The Beer"
+                android:textColor="#FF5722"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="333dp"
+                android:layout_height="108dp"
+                android:layout_marginTop="24dp"
+                android:text="la App The Beer es te permitira poder comprar nuestros productos, hacer un seguimiento de tu compra, ademas de conocer todos nuestros protocolos de seguridad para que todo llegue en perfectas condiciones y tambien acceder a nuestra pagina para conocer mas"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/videoView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                app:layout_constraintVertical_bias="0.08" />
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="359dp"
+                android:layout_height="143dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="379dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3" >
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="69dp"
+                android:layout_height="57dp"
+                android:background="@android:color/transparent"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.345"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.6"
+                app:srcCompat="@drawable/auto"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:layout_width="67dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="20dp"
+                android:background="@android:color/transparent"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageButton8"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/covid"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/imageButton11"
+                android:layout_width="67dp"
+                android:layout_height="54dp"
+                android:background="@android:color/transparent"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageButton9"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/gog"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/imageButton12"
+                android:layout_width="59dp"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageButton8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/axz"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="379dp"
+        android:layout_height="204dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4"
+        app:layout_constraintVertical_bias="0.571" >
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="insumos"
+                android:text="Mis Compras"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.199"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.205" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seguimientos"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.812"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.205" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:text="Que mas compro"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.181"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button"
+                app:layout_constraintVertical_bias="0.861" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="contactos"
+                android:text="Contactanos"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.835"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button3"
+                app:layout_constraintVertical_bias="0.407" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

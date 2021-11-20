@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- esto es para colocar un fondo con el color que nosotros queramos-->
+    <item>
+<shape>
+    <gradient
+        android:startColor="#a24d08"
+        android:centerColor="#D68910"
+        android:endColor="#F8C471"
+        android:angle="90"/>
+    <corners
+        android:radius="0dp"/>
+</shape>
+</item>
+    </selector>

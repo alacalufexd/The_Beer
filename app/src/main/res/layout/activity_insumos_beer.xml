@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradients_background"
+    android:layout_height="match_parent"
+    tools:context=".InsumosBeer">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="396dp"
+        android:layout_height="624dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.338">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="378dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="245dp"
+                android:layout_height="49dp"
+                android:backgroundTint="#E67E22"
+                android:clickable="true"
+                android:onClick="calculanding"
+                android:text="Calcular"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="217dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="16dp"
+                android:text="Bienvenido a The Beer"
+                android:textColor="#B36B00"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="336dp"
+                android:layout_height="98dp"
+                android:layout_marginTop="20dp"
+                android:text="The Beer es la herramienta pluscuanperfecta para la compra, organizacion, inventario y compra de licores y bebestibles para tus mejores momentos con tu familia y amigos"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.466"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <Spinner
+                android:id="@+id/SpnInsu"
+                android:layout_width="309dp"
+                android:layout_height="111dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/resultadoFinal"
+                android:layout_width="195dp"
+                android:layout_height="74dp"
+                android:layout_marginTop="24dp"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SpnInsu" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/resultadoFinal"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>
