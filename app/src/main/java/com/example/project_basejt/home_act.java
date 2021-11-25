@@ -54,4 +54,13 @@ public class home_act extends AppCompatActivity {
 
     }
 
+
+    public void baseDatos(View view)
+    {
+        Intent inf = new Intent(this,baseDatos.class);
+        startActivity(inf);
+
+    }
+
+
 }

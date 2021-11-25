@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_baseJt">
         <activity
+            android:name=".mapsG"
+            android:exported="false" />
+        <activity
+            android:name=".baseDatos"
+            android:exported="false" />
+        <activity
             android:name=".contactos"
             android:exported="false" />
         <activity
